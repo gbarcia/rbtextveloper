@@ -82,7 +82,8 @@ module TextVeloper
       self
     end
 
-    def sub_account_api sub_token
+    def sub_account_api sub_token_param = nil
+      sub_token = sub_token_param.nil? ? TextVeloper::Api.instance.sub_token : sub_token_param
       return TextVeloper::Api.instance.config_tokens_account @token, sub_token unless @memorizing
       @sub_accounts[sub_token] = TextVeloper::Api.instance.config_tokens_account @token, sub_token unless  @sub_accounts.keys.include? sub_token
       @sub_accounts[sub_token]
