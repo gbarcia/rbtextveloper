@@ -18,8 +18,6 @@ Or install it yourself as:
 
 ## Usage
 
-In Ruby SOLO
-
     require 'text_veloper'
 
     # get the account mannager
@@ -48,6 +46,21 @@ In Ruby SOLO
     response = account_manager.purchase_history
 
     #NOTE: Al responses are returned by json. Yo can use JSON.parse(response) for get a Ruby Hash
+
+ In Rails
+
+    rails g text_veloper:initializer
+
+ And config your default token for account and sub_account
+
+    # For configure the tokens for textveloper gem
+    TextVeloper::ApiSelector.api.setup do |config|
+      config.token_account = ""
+      config.sub_token = ""
+    end
+
+##Other Languages?
+  see this for python: [a link](https://github.com/iferminm/pytextveloper)
 
 ## Contributing
 
