@@ -1,6 +1,6 @@
 # TextVeloper
 
-TODO: Write a gem description
+Wrapper for Textveloper API for sending and manage SMS in Venezuela.
 
 ## Installation
 
@@ -60,7 +60,7 @@ Or install it yourself as:
     end
 
 ##Other Languages?
-  see this for python: [a link](https://github.com/iferminm/pytextveloper)
+  see this for python: [pytextveloper](https://github.com/iferminm/pytextveloper)
 
 ## Contributing
 
