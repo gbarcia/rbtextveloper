@@ -2,7 +2,7 @@ require 'singleton'
 
 module TextVeloper
 
-  URL_BASE = 'http://api.textveloper.com/'
+  URL_BASE = 'https://api.textveloper.com/'
 
   def url_base_for concat_param
     URL_BASE + concat_param.to_s + "/"
